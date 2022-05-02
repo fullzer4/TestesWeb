@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    background-color: aqua;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    background: #A30CBC;
+    overflow: hidden;
+}
+
+.container-slides{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.slide-first{
+    display: flex;
+    min-width: 20%;
+    max-width: 20%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.slide-first img{
+    height: 80%;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.slide-conteudo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100%;
+}
+
+.slide-container-descricao{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.slide-container-titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.slide-container-titulo h1{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.slide-container-descricao h2{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.slide-container-saibamais{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-saibamais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #201E1E;
+    border-radius: 25px;
+    width: 15%;
+    height: 40px;
+}
+
+.btn-saibamais a{
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.slide img{
+    height: 80%;
+    border-radius: 20px;
+}
+
+.navigation-manual{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.manual-btn{
+    border: 2px solid #600f6e;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
