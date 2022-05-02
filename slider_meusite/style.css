@@ -18,22 +18,6 @@ body{
     overflow: hidden;
 }
 
-.container-slides{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.slide-first{
-    display: flex;
-    min-width: 20%;
-    max-width: 20%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
 .slide-first img{
     height: 80%;
     border-radius: 20px;
@@ -96,7 +80,7 @@ body{
 }
 
 .slides{
-    width: 500%;
+    width: 100%;
     height: 500px;
     display: flex;
     flex-direction: row;
@@ -108,32 +92,86 @@ body{
 
 .slide{
     display: flex;
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    transition: 4s;
 }
 
 .slide img{
     height: 80%;
     border-radius: 20px;
+    margin-left: 20px;
 }
 
 .navigation-manual{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
     width: 100%;
-    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 475px;
+    gap: 25px;
 }
 
 .manual-btn{
     border: 2px solid #600f6e;
-    padding: 5px;
+    padding: 7px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+}
+
+.manual-btn:hover{
+    background: #600f6e;
+}
+
+#radio1:checked{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -200%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -300%;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 475px;
+    gap: 25px;
+}
+
+.navigation-auto div{
+    border: 2px solid #600f6e;
+    border-radius: 10px;
+    padding: 7px;
+    transition: 1s;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #600f6e;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #600f6e;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #600f6e;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #600f6e;
 }
